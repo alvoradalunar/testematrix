@@ -107,7 +107,10 @@
     <link rel="https://api.w.org/" href="https://bet-max.net/wp-json/"><link rel="alternate" type="application/json" href="https://bet-max.net/wp-json/wp/v2/pages/1250"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://bet-max.net/xmlrpc.php?rsd">
     <meta name="generator" content="WordPress 6.4.1">
     <link rel="shortlink" href="https://bet-max.net/?p=1250"> -->
-    <!-- <script id="wpcp_disable_selection" type="text/javascript">
+    
+    <!-- SCRIPS DE BLOQUEIO DA PÁGINA ABAIXO -->
+
+    <script id="wpcp_disable_selection" type="text/javascript">
     var image_save_msg='You are not allowed to save images!';
         var no_menu_msg='Context Menu disabled!';
         var smessage = "Protegido";
@@ -321,7 +324,10 @@
            return false;
         }
         document.oncontextmenu = nocontext;
-    </script> -->
+    </script>
+
+    <!-- SCRIPS DE BLOQUEIO DA PÁGINA ACIMA -->
+
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./TGeX8WP4PfAn.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="./TGeX8WP4PfAn.ico">
@@ -354,81 +360,7 @@
                   </a>
                 </div>
             </header>
-            <!-- SCRIPT MATRIX ABAIXO -->
-            <script>
-            function startRedMatrixEffect() {
-                var canvas = document.getElementById('canvas');
-                var ctx = canvas.getContext('2d');
-
-                canvas.width = window.innerWidth;
-                canvas.height = window.innerHeight;
-
-                var texts = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()_+-=[]{}|;:,.<>?'.split('');
-                var fontSize = 16;
-                var columns = canvas.width / fontSize;
-                var drops = [];
-                for(var x = 0; x < columns; x++){
-                    drops[x] = 1;
-                }
-
-                function draw(){
-                    ctx.fillStyle = 'rgba(0,0,0,0.05)';
-                    ctx.fillRect(0, 0, canvas.width, canvas.height);
-                    ctx.fillStyle = '#F00'; // Alterado para vermelho (#F00)
-                    ctx.font = fontSize + 'px arial';
-                    for(var i = 0; i < drops.length; i++){
-                        var text = texts[Math.floor(Math.random() * texts.length)];
-                        ctx.fillText(text, i * fontSize, drops[i] * fontSize);
-
-                        if(drops[i] * fontSize > canvas.height || Math.random() > 0.95){
-                            drops[i] = 0;
-                        }
-
-                        drops[i]++;
-                    }
-                }
-
-                setInterval(draw, 33);
-            }
-            </script>
-
-            <script>
-            var canvas = document.getElementById('canvas');
-            var ctx = canvas.getContext('2d');
-
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-
-            var texts = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&*()_+-=[]{}|;:,.<>?'.split('');
-            var fontSize = 16;
-            var columns = canvas.width / fontSize;
-            var drops = [];
-            for(var x = 0; x < columns; x++){
-                drops[x] = 1;
-            }
-
-            function draw(){
-                ctx.fillStyle = 'rgba(0,0,0,0.05)';
-                ctx.fillRect(0, 0, canvas.width, canvas.height);
-                ctx.fillStyle = '#0F0';
-                ctx.font = fontSize + 'px arial';
-                for(var i = 0; i < drops.length; i++){
-                    var text = texts[Math.floor(Math.random() * texts.length)];
-                    ctx.fillText(text, i * fontSize, drops[i] * fontSize);
-
-                    if(drops[i] * fontSize > canvas.height || Math.random() > 0.95){
-                        drops[i] = 0;
-                    }
-
-                    drops[i]++;
-                }
-            }
-
-            setInterval(draw, 33);
-            </script>
-            <!-- SCRIPT MATRIX ACIMA -->
-
-
+            
             <!--div data-elementor-type="header" data-elementor-id="2134" class="elementor elementor-2134 elementor-location-header">
                             <div class="elementor-element elementor-element-b62893b e-flex e-con-boxed e-con e-parent" data-id="b62893b" data-element_type="container" data-settings="{" background_background":"classic","position":"fixed","container_type":"flex","content_width":"boxed"}"="" data-core-v316-plus="true">
                         <div class="e-con-inner">
@@ -1878,8 +1810,6 @@
             </span>
                         </a>
             </div> -->
-
-            <canvas id="canvas"></canvas>
 
             <!-- BOTÃO GERAR ENTRADA -->
 
